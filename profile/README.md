@@ -1,7 +1,6 @@
 # Dentago
 
-Dentago is our solution to the need for a centralized place to book dentist appointments in Sweden. To the users, many different components and “moving” parts appear as a singular system; patients see a website, and dentists see their IT system’s graphical user interface (GUI).
-The system is also available cross-platform on computers and mobile devices.
+Dentago is a **distributed system** designed to centralize dentist appointment bookings across Sweden. It relies on **MQTT** for inter-component communication to achieve scalability, and reliability. Fault tolerance is achieved through diverse mechanisms such as **circuit breakers** and **load balancers** [\[see diagram below\]](#component-diagram). To users, the system appears seamless: patients interact via a web-based interface, while dentists manage appointments through a dedicated GUI. The system is accessible on both computers and mobile devices, offering a versatile and intuitive user experience.
 
 ## Component Diagram
 ![Component Diagram](../imgs/component.png)
